@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    height: auto;
+    display: flex;
+    background: gray;
+
+    /*
+        os pozioma w prawo, row-reverse os pozioma w lewo,
+        natomiast w markupie beda caly czas takie same
+    */
+    flex-direction: row;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+}
+
+.container > div {
+    width: 6rem;
+    min-height: 8rem;
+    /*width: 120px;*/
+    /*min-width: 120px*/
+}
+
+.box1 {
+    background: aqua;
+    flex-shrink: 0;
+}
+
+.box2 {
+    background: aliceblue;
+}
+
+.box3 {
+    background: aquamarine;
+    flex-grow: 1
+}
+
+.box4 {
+    background: bisque;
+}
+
+.box5 {
+    background: cadetblue;
+    flex-grow: 1;
+}
+
+.box6 {
+    background: darkmagenta;
+    flex-grow: 1;
+}
